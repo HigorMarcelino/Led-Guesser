@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body{
+            text-align: center;
+            color: rgb(255, 123, 0);
+        }
+
+        main{
+            margin: 100px auto;
+            width: 700px;
+        }
+
+        h1{
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+        }
+
+        hr{
+            margin: 0 auto;
+            padding: 0;
+            width: 250px;
+        }
+        #hint{
+            position: absolute;
+            top: 200px;
+            left: 0;
+            right: 0;
+        }
+
+
+        #bunit{
+            position: absolute;
+            top: 250px;
+            left: 0;
+            right: 0;
+            
+            
+        }
+
+        img.black{
+            opacity: 0.2;
+        }
+        img#ubum{
+            position: absolute;
+            top: 0;
+            left: 670;
+            right: 0;
+        }
+        img#ubdois{
+            position: absolute;
+            top: 20px;
+            left: 650px;
+        }
+        img#ubtres{
+            position: absolute;
+            top: 20px;
+            left: 770px;
+        }
+        img#ubquatro{
+            position: absolute;
+            top: 120px;
+            left: 670;
+        }
+        img#ubcinco{
+            position: absolute;
+            top: 140px;
+            left: 770px;
+        }
+        img#ubseis{
+            position: absolute;
+            top: 140px;
+            left: 650px;
+        }
+        img#ubsete{
+            position: absolute;
+            top: 240px;
+            left: 670px;
+        }
+        
+        #runit{
+            
+            position: absolute;
+            top: 250px;
+            left: 0;
+            right: 0;
+            
+        }
+
+
+        img#urum{
+            position: absolute;
+            top: 0;
+            left: 670;
+            right: 0;
+        }
+        img#urdois{
+            position: absolute;
+            top: 20px;
+            left: 650px;
+        }
+        img#urtres{
+            position: absolute;
+            top: 20px;
+            left: 770px;
+        }
+        img#urquatro{
+            position: absolute;
+            top: 120px;
+            left: 670;
+            display: none;
+        }
+        img#urcinco{
+            position: absolute;
+            top: 140px;
+            left: 650px;
+        }
+        img#urseis{
+            position: absolute;
+            top: 140px;
+            left: 770px;
+        }
+        img#ursete{
+            position: absolute;
+            top: 240px;
+            left: 670px;
+        }
+
+        #input{
+            position: absolute;
+            top: 550px;
+            left: 650px;
+            display: flex;
+            align-items: center;
+        }
+
+        input{
+            text-align: center;
+            margin-right: 3px;
+            height: 40px; 
+            width: 50px; 
+            font-size: 40px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        button{
+            background-color: rgb(255, 123, 0);
+            color: white;
+            border-radius: 5px;
+            border-color: rgb(255, 123, 0);
+            font-size: 30px;
+            margin-left: 3px;
+        }
+
+        button:hover{
+            background-color: white;
+            color: rgb(255, 123, 0);
+            cursor: pointer;
+        }
+        
+    </style>
+
+    <title>LED Guesser</title>
+</head>
+<body>
+
+    <main>
+        <h1>Qual é o número?</h1>
+        <hr>
+
+        <h3 id="hint"></h3>
+        <div id="led">
+            <!-- Listras pretas -->
+            <div id="bunit">
+                <img id="ubum" class="black" src="/img/blackhorizontal.png" alt="">
+                <img id="ubdois" class="black" src="/img/blackvertical.png" alt="">
+                <img id="ubtres" class="black" src="/img/blackvertical.png" alt="">
+                <img id="ubquatro" class="black" src="/img/blackhorizontal.png" alt="">
+                <img id="ubcinco" class="black" src="/img/blackvertical.png" alt="">
+                <img id="ubseis" class="black" src="/img/blackvertical.png" alt="">
+                <img id="ubsete" class="black" src="/img/blackhorizontal.png" alt="">
+            </div>
+            <!-- Listras vermelhas -->
+            <div id="runit">
+                <img id="urum" src="/img/redhorizontal.png" alt="">
+                <img id="urdois" src="/img/redvertical.png" alt="">
+                <img id="urtres" src="/img/redvertical.png" alt="">
+                <img id="urquatro" src="/img/redhorizontal.png" alt="">
+                <img id="urcinco" src="/img/redvertical.png" alt="">
+                <img id="urseis" src="/img/redvertical.png" alt="">
+                <img id="ursete" src="/img/redhorizontal.png" alt="">
+            </div>
+        </div>
+        <div id="input">
+            <input id="guess" type="number" onfocus="this.value=''">
+            <button id="btn" type="submit">Enviar</button>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
